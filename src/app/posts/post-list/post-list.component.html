@@ -1,8 +1,8 @@
-<mat-accordion>
-  <mat-expansion-panel>
+<mat-accordion multi="true">
+  <mat-expansion-panel *ngFor="let post of posts">
     <mat-expansion-panel-header>
-      This is expansion title
+      {{ post.title }}
     </mat-expansion-panel-header>
-    <p>this is hidden</p>
+    {{ post.content}}
   </mat-expansion-panel>
 </mat-accordion>
