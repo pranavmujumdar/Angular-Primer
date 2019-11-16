@@ -1,5 +1,5 @@
 <h2>The Post Create component</h2>
-<textarea name="" id="" cols="80" rows="9" [placeholder]="'Test'"></textarea>
+<textarea name="" id="" cols="80" rows="9" [placeholder]="'Test'" #postInput></textarea>
 <hr>
-<button (click)="onAddPost()" >Create</button>
+<button (click)="onAddPost(postInput)" >Create</button>
 <p>{{ newPost }}</p>
